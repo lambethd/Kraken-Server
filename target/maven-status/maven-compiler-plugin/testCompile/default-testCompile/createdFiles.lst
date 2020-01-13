@@ -1,0 +1,3 @@
+lambethd\kraken\server\GreetingControllerTests.class
+lambethd\kraken\server\service\marketdata\AlphaVantageMarketDataServiceTest.class
+lambethd\kraken\server\service\mapper\BondTradeMapperTest.class
