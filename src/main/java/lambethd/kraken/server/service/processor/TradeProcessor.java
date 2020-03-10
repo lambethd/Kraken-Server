@@ -4,7 +4,6 @@ import lambethd.kraken.server.mongo.repository.ITradeRepository;
 import lambethd.kraken.server.service.dto.Trade;
 import lambethd.kraken.server.service.enrich.TradeEnricherService;
 import lambethd.kraken.server.service.mapper.TradeMapperService;
-import lambethd.kraken.server.service.marketdata.IMarketDataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

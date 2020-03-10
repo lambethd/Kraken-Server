@@ -4,8 +4,9 @@ import lambethd.kraken.server.mongo.repository.IRiskFactorRepository;
 import lambethd.kraken.server.mongo.repository.IStockMarketDataRepository;
 import lambethd.kraken.server.mongo.repository.IStockTradeRepository;
 import lambethd.kraken.server.service.domain.RiskFactorType;
-import lambethd.kraken.server.service.dto.*;
 import lambethd.kraken.server.service.marketdata.IMarketDataService;
+import lambethd.kraken.server.service.dto.*;
+import lambethd.kraken.server.unit.service.dto.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

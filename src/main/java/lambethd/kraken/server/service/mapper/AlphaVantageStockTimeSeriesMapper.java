@@ -3,9 +3,9 @@ package lambethd.kraken.server.service.mapper;
 import com.fasterxml.jackson.databind.JsonNode;
 import kafka.utils.Json;
 import kafka.utils.json.JsonValue;
+import lambethd.kraken.server.service.marketdata.AlphaVantageMetadataKeys;
 import lambethd.kraken.server.service.dto.StockMarketData;
 import lambethd.kraken.server.service.dto.TimeSerie;
-import lambethd.kraken.server.service.marketdata.AlphaVantageMetadataKeys;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;

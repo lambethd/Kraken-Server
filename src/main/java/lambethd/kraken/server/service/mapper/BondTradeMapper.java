@@ -1,8 +1,8 @@
 package lambethd.kraken.server.service.mapper;
 
+import lambethd.kraken.server.service.dto.TradeFields;
 import lambethd.kraken.server.service.dto.BondTrade;
 import lambethd.kraken.server.service.dto.Trade;
-import lambethd.kraken.server.service.dto.TradeFields;
 import lambethd.kraken.server.service.dto.TradeType;
 import lambethd.kraken.server.util.DateFormatter;
 import org.springframework.stereotype.Service;

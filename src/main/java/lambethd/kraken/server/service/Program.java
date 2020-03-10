@@ -3,7 +3,7 @@ package lambethd.kraken.server.service;
 import lambethd.kraken.server.configuration.RepositorySetup;
 import lambethd.kraken.server.kafka.ConsumerCreator;
 import lambethd.kraken.server.kafka.IKafkaConstants;
-import lambethd.kraken.server.service.processor.TradeProcessor;
+import lambethd.kraken.server.service.processor.message.IMessageProcessor;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +16,17 @@ import java.time.Duration;
 public class Program {
 
     @Autowired
-    private TradeProcessor tradeProcessor;
+    private IMessageProcessor messageProcessor;
 
     @Autowired
     private RepositorySetup repositorySetup;
 
-    private void setup(){
+    private void setup() {
         repositorySetup.setup();
     }
 
     @PostConstruct
-    public void run(){
+    public void run() {
         setup();
         Consumer<Long, String> consumer = ConsumerCreator.createConsumer();
 
@@ -43,11 +43,14 @@ public class Program {
                 } else
                     continue;
             }
-            //print each record.
-            consumerRecords.forEach(record -> tradeProcessor.process(record.value()));
+            consumerRecords.forEach(record -> messageProcessor.ProcessMessage(record.value()));
             // commits the offset of record to broker.
             consumer.commitAsync();
         }
         consumer.close();
+    }
+
+    public void ProcessMessage() {
+
     }
 }

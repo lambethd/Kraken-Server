@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a08aa3b9-b23b-48ec-b36a-f079721bed8b" name="Default Changelist" comment="" />
+    <list default="true" id="a08aa3b9-b23b-48ec-b36a-f079721bed8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/IMessageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/MessageProcessorBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/MessageProcessorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/TradeMessageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lambethd/kraken/server/integration/orchestration/KafkaOrchestrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/configuration/ConfigurationKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/configuration/ConfigurationKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/kafka/ConsumerCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/kafka/ConsumerCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/kafka/IKafkaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/kafka/IKafkaConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/dto/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/dto/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IRiskFactorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IRiskFactorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IStockMarketDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IStockMarketDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IStockTradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/IStockTradeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/ITradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/mongo/repository/ITradeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/builder/BondTradeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/builder/BondTradeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/builder/TradeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/builder/TradeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/configuration/ConfigurationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/configuration/ConfigurationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/domain/RiskFactorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/domain/RiskFactorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/BondTrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/BondTrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/IDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/RiskFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/RiskFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/StockMarketData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/StockMarketData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/StockTrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/StockTrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TimeSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TimeSerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/Trade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TradeFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TradeFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TradeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TradeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/IEnricher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/IEnricher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/StockTradeEnricher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/StockTradeEnricher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/AlphaVantageStockTimeSeriesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/AlphaVantageStockTimeSeriesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/BondTradeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/BondTradeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/ITradeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/ITradeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/SimpleTradeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/SimpleTradeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/TradeMapperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/TradeMapperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageMarketDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageMarketDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageMetadataKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageMetadataKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/TimeSeriesType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/TimeSeriesType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/IProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/IProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/TradeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/TradeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/DateFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/DateFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lambethd/kraken/server/service/marketdata/AlphaVantageMarketDataServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lambethd/kraken/server/service/marketdata/AlphaVantageMarketDataServiceTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,12 +62,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,6 +81,7 @@
   </component>
   <component name="ProjectId" id="1SetPYsf7kVI9qIoj6zsG8DpyVm" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -36,14 +91,14 @@
       <recent name="lambethd.kraken.server.service.mapper" />
       <recent name="lambethd.kraken.server.service.marketdata" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="lambethd.kraken.server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lambethd.kraken.server.mongo.repository" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lambethd.kraken.server.service.domain" />
@@ -106,6 +161,17 @@
       <updated>1571935865471</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
