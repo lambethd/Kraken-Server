@@ -1,7 +1,7 @@
 package lambethd.kraken.server.service.processor;
 
+import dto.TradeDto;
 import lambethd.kraken.server.mongo.repository.ITradeRepository;
-import lambethd.kraken.server.service.dto.Trade;
 import lambethd.kraken.server.service.enrich.TradeEnricherService;
 import lambethd.kraken.server.service.mapper.TradeMapperService;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ public class TradeProcessor implements IProcessor {
     private Logger logger = LoggerFactory.getLogger(TradeProcessor.class);
 
     public void process(String tradeString) {
-        Trade trade;
+        TradeDto trade;
         try {
             trade = tradeMapperService.map(tradeString);
         } catch (Exception e) {

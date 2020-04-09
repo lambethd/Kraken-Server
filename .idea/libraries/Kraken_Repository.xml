@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Kraken-Repository">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../Kraken-Repository/target/classes" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,7 +1,6 @@
 package lambethd.kraken.server.configuration;
 
-import lambethd.kraken.server.mongo.dto.Configuration;
-import lambethd.kraken.server.mongo.repository.IConfigRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

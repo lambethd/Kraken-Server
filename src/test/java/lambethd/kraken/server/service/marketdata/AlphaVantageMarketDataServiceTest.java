@@ -1,9 +1,10 @@
 package lambethd.kraken.server.service.marketdata;
 
+import dto.StockMarketDataDto;
+import lambethd.kraken.data.mongo.dto.StockMarketDataDto;
 import lambethd.kraken.server.Configuration;
 import lambethd.kraken.server.MongoConfiguration;
 import lambethd.kraken.server.mongo.repository.IStockMarketDataRepository;
-import lambethd.kraken.server.service.dto.StockMarketData;
 import lambethd.kraken.server.service.mapper.AlphaVantageStockTimeSeriesMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +25,7 @@ public class AlphaVantageMarketDataServiceTest {
 
     @Test
     public void getMarketData() {
-        StockMarketData response = marketDataService.getDailyStockMarketData("GOOGL");
+        StockMarketDataDto response = marketDataService.getDailyStockMarketData("GOOGL");
         stockMarketDataRepository.insert(response);
     }
 }

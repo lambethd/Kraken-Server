@@ -1,6 +1,6 @@
 package lambethd.kraken.server.service.mapper;
 
-import lambethd.kraken.server.service.dto.TradeType;
+import domain.TradeType;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

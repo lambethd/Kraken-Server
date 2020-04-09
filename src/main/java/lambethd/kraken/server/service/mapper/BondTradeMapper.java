@@ -1,9 +1,9 @@
 package lambethd.kraken.server.service.mapper;
 
+import domain.TradeType;
+import dto.BondTradeDto;
+import dto.TradeDto;
 import lambethd.kraken.server.service.dto.TradeFields;
-import lambethd.kraken.server.service.dto.BondTrade;
-import lambethd.kraken.server.service.dto.Trade;
-import lambethd.kraken.server.service.dto.TradeType;
 import lambethd.kraken.server.util.DateFormatter;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 public class BondTradeMapper implements ITradeMapper {
 
     @Override
-    public Trade map(String tradeString) {
-        BondTrade trade = new BondTrade();
+    public TradeDto map(String tradeString) {
+        BondTradeDto trade = new BondTradeDto();
         String[] splitString = tradeString.split(",");
         trade.setBondId(splitString[TradeFields.bondId]);
         trade.setMaturityDate(LocalDateTime.parse(splitString[TradeFields.maturityDate], DateFormatter.dateFormatter()));

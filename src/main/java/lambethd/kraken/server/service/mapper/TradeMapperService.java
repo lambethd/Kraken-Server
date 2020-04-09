@@ -1,6 +1,5 @@
 package lambethd.kraken.server.service.mapper;
 
-import lambethd.kraken.server.service.dto.Trade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

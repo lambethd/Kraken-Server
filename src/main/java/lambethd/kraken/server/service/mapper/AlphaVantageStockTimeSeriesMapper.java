@@ -1,11 +1,11 @@
 package lambethd.kraken.server.service.mapper;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import domain.TimeSerie;
+import dto.StockMarketDataDto;
 import kafka.utils.Json;
 import kafka.utils.json.JsonValue;
 import lambethd.kraken.server.service.marketdata.AlphaVantageMetadataKeys;
-import lambethd.kraken.server.service.dto.StockMarketData;
-import lambethd.kraken.server.service.dto.TimeSerie;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
@@ -17,13 +17,13 @@ import java.util.List;
 @Service
 public class AlphaVantageStockTimeSeriesMapper {
 
-    public StockMarketData map(String marketDataString) {
+    public StockMarketDataDto map(String marketDataString) {
         JsonValue value = Json.parseFull(marketDataString).get();
         JsonNode node = value.node();
         JsonNode metadataNode = node.get("Meta Data");
         JsonNode timeSeriesNode = node.get("Time Series (Daily)");
 
-        StockMarketData stockMarketData = new StockMarketData();
+        StockMarketDataDto stockMarketData = new StockMarketDataDto();
         stockMarketData.setMetaData(getMetaData(metadataNode));
         stockMarketData.setTimeSeries(getTimeSeries(timeSeriesNode));
         return stockMarketData;

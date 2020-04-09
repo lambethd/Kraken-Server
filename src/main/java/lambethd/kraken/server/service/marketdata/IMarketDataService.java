@@ -1,7 +1,7 @@
 package lambethd.kraken.server.service.marketdata;
 
-import lambethd.kraken.server.service.dto.StockMarketData;
+import dto.StockMarketDataDto;
 
 public interface IMarketDataService {
-    StockMarketData getDailyStockMarketData(String symbol);
+    StockMarketDataDto getDailyStockMarketData(String symbol);
 }

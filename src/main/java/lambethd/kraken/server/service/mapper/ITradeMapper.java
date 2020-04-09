@@ -1,9 +1,9 @@
 package lambethd.kraken.server.service.mapper;
 
-import lambethd.kraken.server.service.dto.Trade;
-import lambethd.kraken.server.service.dto.TradeType;
+import domain.TradeType;
+import dto.TradeDto;
 
 public interface ITradeMapper {
-    Trade map(String tradeString);
+    TradeDto map(String tradeString);
     boolean canMap(TradeType tradeType);
 }

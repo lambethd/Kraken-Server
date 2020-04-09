@@ -1,7 +1,7 @@
 package lambethd.kraken.server.service.builder;
 
-import lambethd.kraken.server.service.dto.Trade;
-import lambethd.kraken.server.service.dto.TradeType;
+import domain.TradeType;
+import dto.TradeDto;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -25,13 +25,5 @@ public class TradeBuilder {
     public TradeBuilder withPurchaseDate(Date purchaseDate) {
         this.purchaseDate = purchaseDate;
         return this;
-    }
-
-    public Trade build() {
-        Trade trade = new Trade();
-        trade.setId(id);
-        trade.setTradeType(tradeType);
-        trade.setPurchaseDate(purchaseDate);
-        return trade;
     }
 }

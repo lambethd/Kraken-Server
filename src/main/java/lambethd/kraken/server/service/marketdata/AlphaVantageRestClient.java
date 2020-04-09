@@ -1,8 +1,8 @@
 package lambethd.kraken.server.service.marketdata;
 
+import dto.StockMarketDataDto;
 import lambethd.kraken.server.configuration.ConfigurationKey;
 import lambethd.kraken.server.service.configuration.ConfigurationService;
-import lambethd.kraken.server.service.dto.StockMarketData;
 import lambethd.kraken.server.service.mapper.AlphaVantageStockTimeSeriesMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +26,7 @@ public class AlphaVantageRestClient {
 
     private Logger logger = LoggerFactory.getLogger(AlphaVantageRestClient.class);
 
-    public StockMarketData getMarketDataString(String symbol, String function) {
+    public StockMarketDataDto getMarketDataString(String symbol, String function) {
         String urlString = configurationService.getConfigItem(ConfigurationKey.ALPHA_VANTAGE_URL_KEY).getValue();
         String apiKey = configurationService.getConfigItem(ConfigurationKey.ALPHA_VANTAGE_API_KEY_KEY).getValue();
         urlString = urlString.replace("{function}", function);
