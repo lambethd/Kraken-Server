@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "lambethd.kraken.server.mongo")
+@EnableMongoRepositories(basePackages = "lambethd.kraken.data.mongo.repository")
 public class MongoConfiguration extends AbstractMongoConfiguration {
 
     @Override
