@@ -20,51 +20,148 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a08aa3b9-b23b-48ec-b36a-f079721bed8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Kraken-Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/common/UpdateLastUpdatedBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/common/ValidatedBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/spread/CreateSpreadBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/trade/AbortTradeBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/trade/CompleteTradeBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/trade/CreateTradeBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/trade/PartiallyCompleteTradeBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/behaviour/trade/PositionEffectingTradeBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/PositionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/SpreadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/ApiSubError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/HttpException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/RestExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/TradeFlowException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/UnableToMapException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/UserRegistrationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ISpreadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ISpreadValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ITradeDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ITradeToHistoricalTradeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ITradeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IUserValidationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/mapper/TradeDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/mapper/TradeToHistoricalTradeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/security/JwtConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/security/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/SpreadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/UserValidationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/strategies/common/StrategyBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/strategies/spread/CreateSpreadStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/strategies/trade/AbortTradeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/strategies/trade/CompleteTradeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/strategies/trade/CreateTradeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/strategies/trade/PartiallyCompleteTradeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/validation/SpreadValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/validation/TradeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/validation/ValidatorBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/mapper/TradeDtoMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/AuthServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/Sandbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/TradeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/AuthScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/TrackedDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/BuySell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/HistoricalTrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/Spread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/HistoricalData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/ICurrentTradeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IPositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/ISpreadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IHistoricalDataApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IHistoricalDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/HistoricalDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IHistoricalDataApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/MongoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/MongoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/GraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/GraphController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/TradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/TradeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/dto/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/dto/TradeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ITradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/ITradeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/TradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/TradeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/GreetingControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/GreetingControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/target/classes/META-INF/kraken-data-services.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/target/test-classes/META-INF/kraken-data-services.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/TimeSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/TimeSerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/BondTradeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/ConfigurationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/ConfigurationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/IDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/RiskFactorDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/StockMarketDataDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/StockTradeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/TradeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/AbortedTrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/CompletedTrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/PartialTrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/PendingTrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/Trade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/TradeStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/portfolio/TradeStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Catalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Catalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Runeday.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/Runeday.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/UrlConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/runescape/UrlConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/classes/META-INF/domain.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/ITradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/ITradeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IConfigRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IConfigRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IGraphRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IGraphRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/SimpleRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/SimpleRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/ProgramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ICatalogueApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ICatalogueApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IGraphApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IGraphApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IInfoApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IInfoApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IItemApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IItemApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/mapper/InfoMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/mapper/InfoMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/test-classes/META-INF/Kraken-Resources.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/configuration/ConfigurationKey.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/configuration/RepositorySetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/configuration/RepositorySetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/builder/BondTradeBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/builder/TradeBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/configuration/ConfigurationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/dto/TradeFields.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/IEnricher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/StockTradeEnricher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/TradeEnricherService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/AlphaVantageStockTimeSeriesMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/BondTradeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/ITradeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/SimpleTradeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/StockTradeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/mapper/TradeMapperService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageMarketDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageMetadataKeys.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/AlphaVantageRestClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/IMarketDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/marketdata/TimeSeriesType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/IProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/TradeProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/IMessageProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/MessageProcessorBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/MessageProcessorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/MessageType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/processor/message/TradeMessageProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lambethd/kraken/server/service/mapper/BondTradeMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lambethd/kraken/server/service/marketdata/AlphaVantageMarketDataServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/kraken-server-0.1.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +171,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -98,43 +196,49 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/lambethd/kraken" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="lambethd.kraken.application.service" />
+      <recent name="lambethd.kraken.application.mapper" />
       <recent name="lambethd.kraken.data.mongo.repository" />
       <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.resource.mapper" />
-      <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="lambethd.kraken.resource" />
       <recent name="lambethd.kraken.application" />
       <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.server" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="lambethd.kraken.application.controller" />
-      <recent name="lambethd.kraken.application" />
-      <recent name="lambethd.kraken.application.service.controller" />
-      <recent name="lambethd.kraken.data.mongo.repository" />
-      <recent name="lambethd.kraken.resource.interfaces" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\Kraken-Data-Services\src\main\resources\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\Kraken-Resources\src\main\java\lambethd\kraken\resource\interfaces" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lambethd.kraken.application.interfaces" />
+      <recent name="lambethd.kraken.application.controller" />
+      <recent name="lambethd.kraken.application.validation" />
+      <recent name="lambethd.kraken.application.strategies.spread" />
+      <recent name="lambethd.kraken.application.behaviour.spread" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lambethd.kraken.application.service" />
@@ -162,7 +266,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IGraphApiTest.mapToFloat_GivenAnInt_MapsCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GreetingControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kraken-Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambethd.kraken.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambethd.kraken.server" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.GreetingControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IHistoricalDataApiTest.TestApiCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kraken-Resources" />
       <extension name="coverage">
         <pattern>
@@ -171,8 +290,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lambethd.kraken.resource.interfaces" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.resource.interfaces.IGraphApiTest" />
-      <option name="METHOD_NAME" value="mapToFloat_GivenAnInt_MapsCorrectly" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.resource.interfaces.IHistoricalDataApiTest" />
+      <option name="METHOD_NAME" value="TestApiCall" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,8 +312,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.findByNameRegex_GivenRegex_Returns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Sandbox.clearAllTrades_Always_ClearsTrades" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="kraken-data-services" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lambethd.kraken.application.service.*" />
@@ -202,30 +322,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lambethd.kraken.application.service" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.ItemServiceTest" />
-      <option name="METHOD_NAME" value="findByNameRegex_GivenRegex_Returns" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.Sandbox" />
+      <option name="METHOD_NAME" value="clearAllTrades_Always_ClearsTrades" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.getItemById_GiveValidId_ReturnsTheItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TradeDtoMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kraken-data-services" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lambethd.kraken.application.service.*" />
+          <option name="PATTERN" value="lambethd.kraken.application.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lambethd.kraken.application.service" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.ItemServiceTest" />
-      <option name="METHOD_NAME" value="getItemById_GiveValidId_ReturnsTheItem" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="lambethd.kraken.application.mapper" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.mapper.TradeDtoMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.getItemById_GiveValidIds_ReturnsTheItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TradeServiceTest.createTrade_WhenItIsPending_CreatesTrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kraken-data-services" />
       <extension name="coverage">
         <pattern>
@@ -234,29 +354,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lambethd.kraken.application.service" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.ItemServiceTest" />
-      <option name="METHOD_NAME" value="getItemById_GiveValidIds_ReturnsTheItem" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.TradeServiceTest" />
+      <option name="METHOD_NAME" value="createTrade_WhenItIsPending_CreatesTrade" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Kraken Server" />
       <item itemvalue="Application.Kraken Data Services" />
-      <item itemvalue="JUnit.IGraphApiTest.mapToFloat_GivenAnInt_MapsCorrectly" />
+      <item itemvalue="Application.Kraken Server" />
+      <item itemvalue="JUnit.Sandbox.clearAllTrades_Always_ClearsTrades" />
+      <item itemvalue="JUnit.IHistoricalDataApiTest.TestApiCall" />
+      <item itemvalue="JUnit.TradeServiceTest.createTrade_WhenItIsPending_CreatesTrade" />
+      <item itemvalue="JUnit.GreetingControllerTests" />
+      <item itemvalue="JUnit.TradeDtoMapperTest" />
       <item itemvalue="JUnit.ItemServiceTest" />
-      <item itemvalue="JUnit.ItemServiceTest.getItemById_GiveValidId_ReturnsTheItem" />
-      <item itemvalue="JUnit.ItemServiceTest.getItemById_GiveValidIds_ReturnsTheItem" />
-      <item itemvalue="JUnit.ItemServiceTest.findByNameRegex_GivenRegex_Returns" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ItemServiceTest" />
-        <item itemvalue="JUnit.ItemServiceTest.findByNameRegex_GivenRegex_Returns" />
-        <item itemvalue="JUnit.ItemServiceTest.getItemById_GiveValidIds_ReturnsTheItem" />
-        <item itemvalue="JUnit.ItemServiceTest.getItemById_GiveValidId_ReturnsTheItem" />
-        <item itemvalue="JUnit.IGraphApiTest.mapToFloat_GivenAnInt_MapsCorrectly" />
+        <item itemvalue="JUnit.TradeDtoMapperTest" />
+        <item itemvalue="JUnit.GreetingControllerTests" />
+        <item itemvalue="JUnit.IHistoricalDataApiTest.TestApiCall" />
+        <item itemvalue="JUnit.TradeServiceTest.createTrade_WhenItIsPending_CreatesTrade" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +404,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="726" y="224" key="#Auto_Import" timestamp="1589807398074">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="224" key="#Auto_Import/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589807398074" />
     <state x="669" y="139" key="#Kraken_Data_Services" timestamp="1587133524501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -291,114 +416,146 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587303572484" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587133497976">
+    <state x="563" y="123" key="#Sandbox.clearAllTrades_Always_ClearsTrades" timestamp="1587933331069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587133497976" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1587306685487">
+    <state x="563" y="123" key="#Sandbox.clearAllTrades_Always_ClearsTrades/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587933331069" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587924038325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587306685487" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587924038325" />
+    <state x="693" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590953086901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590953086901" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1590839542545">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590839542545" />
     <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587133484730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587133484730" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590834565643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590834565643" />
     <state x="782" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587133868595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="782" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587133868595" />
-    <state x="717" y="389" width="486" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586972599214">
+    <state x="717" y="389" width="486" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591225755763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="717" y="389" width="486" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586972599214" />
+    <state x="717" y="389" width="486" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591225755763" />
     <state x="717" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587133870071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="717" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587133870071" />
-    <state width="423" height="466" key="DebuggerActiveHint" timestamp="1587071679655">
+    <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590608578150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="423" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587071679655" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586805268400">
+    <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590608578150" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590835898713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586805268400" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587307111013">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590835898713" />
+    <state width="457" height="466" key="DebuggerActiveHint" timestamp="1590652704960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111013" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587307111013">
+    <state width="457" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590652704960" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587307437464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111013" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587307111013">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307437464" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1591225895757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111013" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587307111013">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591225895757" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1591225895757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111013" />
-    <state width="1877" height="349" key="GridCell.Tab.1.bottom" timestamp="1587307111009">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591225895757" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1591225895757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="349" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111009" />
-    <state width="1877" height="349" key="GridCell.Tab.1.center" timestamp="1587307111009">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591225895757" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1591225895757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="349" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111009" />
-    <state width="1877" height="349" key="GridCell.Tab.1.left" timestamp="1587307111009">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591225895757" />
+    <state width="1877" height="292" key="GridCell.Tab.1.bottom" timestamp="1590952908242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="349" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111009" />
-    <state width="1877" height="349" key="GridCell.Tab.1.right" timestamp="1587307111009">
+    <state width="1877" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590952908242" />
+    <state width="1877" height="292" key="GridCell.Tab.1.center" timestamp="1590952908242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="349" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587307111009" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587133743042">
+    <state width="1877" height="292" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590952908242" />
+    <state width="1877" height="292" key="GridCell.Tab.1.left" timestamp="1590952908242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587133743042" />
+    <state width="1877" height="292" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590952908242" />
+    <state width="1877" height="292" key="GridCell.Tab.1.right" timestamp="1590952908242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590952908242" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588183429122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588183429122" />
     <state x="646" y="295" key="NewModule_or_Project.wizard" timestamp="1586805270203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="646" y="295" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586805270203" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1586811502462">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1588621309534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586811502462" />
-    <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1587304912232">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588621309534" />
+    <state x="681" y="261" width="570" height="524" key="StructurePopup" timestamp="1587929731423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="681" y="261" width="570" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587304912232" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1587305129580">
+    <state x="681" y="261" width="570" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587929731423" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1591222098899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587305129580" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1586980695708">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591222098899" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1589924618977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586980695708" />
-    <state x="798" y="282" key="chooseDestDirectoryDialog" timestamp="1587303585397">
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589924618977" />
+    <state x="798" y="282" key="chooseDestDirectoryDialog" timestamp="1587328306609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="798" y="282" key="chooseDestDirectoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587303585397" />
+    <state x="798" y="282" key="chooseDestDirectoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587328306609" />
     <state x="570" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586807747887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="570" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586807747887" />
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587305126613">
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588621238060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587305126613" />
-    <state x="731" y="333" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587303594930">
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588621238060" />
+    <state x="731" y="333" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588182640176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="731" y="333" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587303594930" />
+    <state x="731" y="333" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588182640176" />
+    <state x="667" y="83" width="586" height="873" key="find.popup" timestamp="1588180852234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="83" width="586" height="873" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588180852234" />
     <state x="342" y="181" key="new project wizard" timestamp="1586805545120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="181" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586805545120" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1587388840428">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587388840428" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1591224458264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591224458264" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -416,33 +573,88 @@
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="response.equals(&quot;&quot;)" language="JAVA" />
           <url>file://$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java</url>
-          <line>52</line>
+          <line>63</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java</url>
-          <line>41</line>
+          <line>53</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IGraphApiTest.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="32" />
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/ItemController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="35" />
+          <line>36</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/UserController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/UserController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/TradeService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/TradeService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/TradeService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/TradeService.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/PositionService.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/RestExceptionHandler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/RestExceptionHandler.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/AuthService.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/SpreadService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/TradeController.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/TradeController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -453,10 +665,15 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="graph.daily.get(LocalDateTime.of(2020,04,16,0,0))" language="JAVA" />
+        <watch expression="data.substring(data.indexOf(&quot;return&quot;))" language="JAVA" />
+        <watch expression="doc.select(&quot;.mw-highlight&quot;).first().child(0).select(&quot;.s1&quot;).first().childNode(0).toString().replace(&quot;'&quot;,&quot;&quot;)" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="results.get(0)" />
+        <watch expression="position.getQuantity()" language="JAVA" />
+        <watch expression="current.getCurrentQuantity()" language="JAVA" />
+        <watch expression="text.replace(&quot;return&quot;,&quot;&quot;).replace(&quot;{&quot;, &quot;&quot;).replace(&quot;}&quot;,&quot;&quot;).split(&quot;,&quot;)" language="JAVA" />
+        <watch expression="current" />
+        <watch expression="spreadRepository.getSpreadByUsername(username, new Sort(Sort.Direction.DESC, &quot;lastUpdated&quot;))" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
