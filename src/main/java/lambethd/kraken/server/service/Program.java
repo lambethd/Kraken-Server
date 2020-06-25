@@ -15,7 +15,6 @@ import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -44,16 +43,24 @@ public class Program {
 
     @PostConstruct
     public void run() throws IOException {
+        System.out.println("Beginning Load");
         setup();
         Date totalStart = Date.from(Instant.now());
         infoApi.getInfo();
 
-        List<Item> items = itemRepository.findAll();
+        Date start = Date.from(Instant.now());
+        List<Item> items = itemApi.getItems();
+        Date end = Date.from(Instant.now());
+
+        System.out.println("Taken " + (end.getTime() - start.getTime()) + " to load items from RS");
+        itemRepository.saveAll(items);
+
         items.parallelStream().forEach(item -> {
             try {
                 Runeday currentRuneday = infoApi.getInfo();
-                if (graphRepository.getGraphById(item.id).lastUpdatedRuneDay != currentRuneday.lastConfigUpdateRuneday) {
-                    Date start = Date.from(Instant.now());
+                Graph previousGraph = graphRepository.getGraphById(item.id);
+                if (previousGraph == null || previousGraph.lastUpdatedRuneDay != currentRuneday.lastConfigUpdateRuneday) {
+                    Date start1 = Date.from(Instant.now());
                     String itemName = item.wikiName == null ? item.name : item.wikiName;
                     List<HistoricalData> historicalData = historicalDataApi.getHistoricalData(itemName);
                     Graph graph = new Graph();
@@ -65,15 +72,17 @@ public class Program {
                     }
                     graphRepository.save(graph);
 
-                    Date end = Date.from(Instant.now());
+                    Date end1 = Date.from(Instant.now());
 
-                    System.out.println("Time taken for " + graph.daily.size() + " points for " + item.name + ": " + (end.getTime() - start.getTime()) + "ms");
+                    System.out.println("Time taken for " + graph.daily.size() + " points for " + item.name + ": " + (end1.getTime() - start1.getTime()) + "ms");
                 }
 
             } catch (NullPointerException npe) {
                 System.out.println("NPE: Failed on " + item.name + ", attempted to use " + item.name.replace(" ", "_"));
+                npe.printStackTrace();
             } catch (RuntimeException e) {
                 System.out.println("RE: Failed on " + item.name + ", attempted to use " + item.name.replace(" ", "_"));
+                e.printStackTrace();
             } catch (Exception e) {
                 e.printStackTrace();
             }
