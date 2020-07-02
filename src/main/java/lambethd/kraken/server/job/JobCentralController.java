@@ -3,10 +3,13 @@ package lambethd.kraken.server.job;
 import domain.orchestration.IJob;
 import domain.orchestration.JobStatus;
 import lambethd.kraken.data.mongo.repository.IJobRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -26,6 +29,8 @@ public class JobCentralController {
     private IJobRepository jobRepository;
     @Autowired
     private JobProcessorFactory jobProcessorFactory;
+    Logger logger = LoggerFactory.getLogger(this.getClass());
+
 
     AtomicBoolean running = new AtomicBoolean(false);
     Boolean isInitialised = false;
@@ -41,15 +46,15 @@ public class JobCentralController {
         repeatingExecutor = Executors.newScheduledThreadPool(coreThreads);
         jobExecutor = Executors.newFixedThreadPool(maximumThreads);
         isInitialised = true;
-        System.out.println("Initialised JobCentralController");
+        logger.info("Initialised JobCentralController");
     }
 
     public void begin() {
         running.set(true);
-        jobCreationFuture = repeatingExecutor.scheduleAtFixedRate(jobCreation(), 0, 10, TimeUnit.SECONDS);
-        System.out.println("Scheduled job creation service");
-        jobCompletingFuture = repeatingExecutor.scheduleAtFixedRate(jobCompleting(), 5, 10, TimeUnit.SECONDS);
-        System.out.println("Scheduled job completion service");
+        jobCreationFuture = repeatingExecutor.scheduleAtFixedRate(jobCreation(), 0, controllerTimeoutMinutes, TimeUnit.MINUTES);
+        logger.info("Scheduled job creation service");
+        jobCompletingFuture = repeatingExecutor.scheduleAtFixedRate(jobCompleting(), 2, controllerTimeoutMinutes, TimeUnit.MINUTES);
+        logger.info("Scheduled job completion service");
     }
 
     public Boolean requestJobCancellation(String jobId) {
@@ -73,11 +78,11 @@ public class JobCentralController {
 
     private Runnable jobCreation() {
         return () -> {
-            System.out.println("Looking for jobs to create!");
+            logger.info("Looking for jobs to create");
             List<IJob> jobsToProcess = jobRepository.findJobByStatus(JobStatus.Pending);
             jobsToProcess.forEach(job -> {
                 if (!jobFutures.containsKey(job.getId())) {
-                    System.out.println("Found a job to create!");
+                    job.setStartTime(LocalDateTime.now());
                     setJobStatus(job, JobStatus.Started);
                     try {
                         IJobProcessor processor = jobProcessorFactory.getJobProcessor(job);
@@ -96,23 +101,27 @@ public class JobCentralController {
     }
 
     private void setJobStatus(IJob job, JobStatus status) {
-        System.out.println("Setting job(" + job.getId() + ") to " + status);
         job.setStatus(status);
+        logger.info("#############################################################################################################");
+        logger.info("Job (" + job.getId() + ") of JobType: " + job.getJobType() + " set to status: " + job.getStatus());
+        logger.info("#############################################################################################################");
         jobRepository.save(job);
     }
 
     private Runnable jobCompleting() {
         return () -> {
-            System.out.println("Finding jobs that have completed");
+            logger.info("Finding jobs that have completed");
             jobFutures.forEachKey(maximumThreads, key -> {
                 if (jobFutures.get(key).isDone()) {
-                    //TODO: Complete the job here
                     try {
                         Boolean result = jobFutures.get(key).get();
-                        System.out.println("Found completed job with status: " + result);
                         IJob job = jobRepository.findById(key);
                         jobFutures.remove(key);
-                        setJobStatus(job, JobStatus.Completed);
+                        if (result) {
+                            setJobStatus(job, JobStatus.Completed);
+                        } else {
+                            setJobStatus(job, JobStatus.Failed);
+                        }
                     } catch (InterruptedException | ExecutionException e) {
                         e.printStackTrace();
                     }
@@ -124,12 +133,12 @@ public class JobCentralController {
     public void failedPreviouslyStartedJobs() {
         List<IJob> startedJobs = jobRepository.findJobByStatus(JobStatus.Started);
         startedJobs.forEach(j -> {
-            System.out.println("Setting Started job(" + j.getId() + ") to failed.");
+            logger.info("Setting Started job(" + j.getId() + ") to failed.");
             setJobStatus(j, JobStatus.Failed);
         });
         List<IJob> blockedJobs = jobRepository.findJobByStatus(JobStatus.Blocked);
         blockedJobs.forEach(j -> {
-            System.out.println("Setting Blocked job(" + j.getId() + ") to failed.");
+            logger.info("Setting Blocked job(" + j.getId() + ") to failed.");
             setJobStatus(j, JobStatus.Failed);
         });
     }

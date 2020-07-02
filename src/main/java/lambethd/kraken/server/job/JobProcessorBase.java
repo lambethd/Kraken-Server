@@ -5,7 +5,12 @@ import domain.orchestration.IJob;
 public abstract class JobProcessorBase implements IJobProcessor {
     protected IJob job;
 
-    public JobProcessorBase(IJob job) {
+    public IJob getJob() {
+        return job;
+    }
+
+    @Override
+    public void setJob(IJob job) {
         this.job = job;
     }
 }
