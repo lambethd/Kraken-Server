@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Kraken-Resources" />
+        <module name="Kraken-Server" />
         <module name="kraken-data-services" />
         <module name="domain" />
         <module name="repository" />
-        <module name="Kraken-Server" />
+        <module name="Kraken-Resources" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
