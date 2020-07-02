@@ -1,17 +1,17 @@
 package lambethd.kraken.server.job;
 
 import domain.orchestration.IJob;
+import lambethd.kraken.server.util.BeanUtil;
 import org.springframework.stereotype.Service;
 
 @Service
 public class JobProcessorFactory {
 
+
     public IJobProcessor getJobProcessor(IJob job) throws Exception {
-        switch (job.getJobType()) {
-            case HistoricalDataLoader:
-                return new HistoricalDataLoader(job);
-            default:
-                throw new Exception("Could not find processor for JobType: " + job.getJobType());
-        }
+        Class<?> processorClassName = Class.forName("lambethd.kraken.server.job." + job.getJobType());
+        IJobProcessor jobProcessor = (IJobProcessor) BeanUtil.getBean(processorClassName);
+        jobProcessor.setJob(job);
+        return jobProcessor;
     }
 }
