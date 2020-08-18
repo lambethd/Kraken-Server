@@ -1,8 +1,11 @@
 package lambethd.kraken.server.job;
 
 import domain.orchestration.IJob;
+import domain.orchestration.JobDependency;
 import domain.orchestration.JobStatus;
 import lambethd.kraken.data.mongo.repository.IJobRepository;
+import lambethd.kraken.resource.interfaces.IInfoApi;
+import lambethd.kraken.server.interfaces.IJobDetailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +16,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.stream.Collectors;
 
 @Service
 public class JobCentralController {
@@ -29,7 +33,12 @@ public class JobCentralController {
     private IJobRepository jobRepository;
     @Autowired
     private JobProcessorFactory jobProcessorFactory;
-    Logger logger = LoggerFactory.getLogger(this.getClass());
+    @Autowired
+    private IJobDetailService jobDetailService;
+    @Autowired
+    private IInfoApi infoApi;
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 
     AtomicBoolean running = new AtomicBoolean(false);
@@ -81,23 +90,38 @@ public class JobCentralController {
             logger.info("Looking for jobs to create");
             List<IJob> jobsToProcess = jobRepository.findJobByStatus(JobStatus.Pending);
             jobsToProcess.forEach(job -> {
-                if (!jobFutures.containsKey(job.getId())) {
-                    job.setStartTime(LocalDateTime.now());
-                    setJobStatus(job, JobStatus.Started);
-                    try {
-                        IJobProcessor processor = jobProcessorFactory.getJobProcessor(job);
-                        if (processor.validate()) {
-                            jobFutures.put(job.getId(), jobExecutor.submit(processor));
-                        } else {
+                if (canRunJob(job)) {
+                    if (!jobFutures.containsKey(job.getId())) {
+                        job.setStartTime(LocalDateTime.now());
+                        setJobStatus(job, JobStatus.Started);
+                        try {
+                            IJobProcessor processor = jobProcessorFactory.getJobProcessor(job);
+                            if (processor.validate()) {
+                                jobFutures.put(job.getId(), jobExecutor.submit(processor));
+                            } else {
+                                setJobStatus(job, JobStatus.Failed);
+                            }
+                        } catch (Exception e) {
                             setJobStatus(job, JobStatus.Failed);
+                            e.printStackTrace();
                         }
-                    } catch (Exception e) {
-                        setJobStatus(job, JobStatus.Failed);
-                        e.printStackTrace();
                     }
                 }
             });
         };
+    }
+
+    private boolean canRunJob(IJob job) {
+        List<JobDependency> dependencies = jobDetailService.findJobDependencies(job);
+        List<JobDependency> missingDependencies = dependencies.stream()
+                .filter(jobDependency -> !jobRepository.existsByJobTypeAndStatusAndRuneDay(jobDependency.getJobType(), JobStatus.Completed, job.getRuneDay()))
+                .collect(Collectors.toList());
+        if (missingDependencies.isEmpty()) {
+            return true;
+        } else {
+            logger.info("Dependencies are missing for job: " + job.getJobType() + ". Missing dependencies are: " + missingDependencies.stream().map(jd -> jd.getJobType().toString()).collect(Collectors.joining(",")));
+            return false;
+        }
     }
 
     private void setJobStatus(IJob job, JobStatus status) {

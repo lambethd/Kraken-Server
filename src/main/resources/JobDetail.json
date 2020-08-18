@@ -1,0 +1,15 @@
+[
+  {
+    "jobType": "DailyDataLoader",
+    "jobDependencies": []
+  },
+  {
+    "jobType": "HistoricalDataLoader",
+    "jobDependencies": [
+      {
+        "jobType": "DailyDataLoader",
+        "authScope": "GOD"
+      }
+    ]
+  }
+]
