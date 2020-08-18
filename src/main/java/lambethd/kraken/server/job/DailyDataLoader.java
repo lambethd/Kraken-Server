@@ -33,11 +33,11 @@ public class DailyDataLoader extends JobProcessorBase {
 
     @Override
     public JobType getJobType() {
-        return JobType.HistoricalDataLoader;
+        return JobType.DailyDataLoader;
     }
 
     @Override
-    public Boolean call() throws IOException {
+    public Boolean callInternal() throws IOException {
         List<Item> items = itemApi.getItems();
         itemRepository.saveAll(items);
         return true;
