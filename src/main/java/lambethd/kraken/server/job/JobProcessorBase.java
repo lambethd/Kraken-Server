@@ -25,6 +25,7 @@ public abstract class JobProcessorBase implements IJobProcessor {
             progressReporter.reportProgress(job, 1, 1);
             return result;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
