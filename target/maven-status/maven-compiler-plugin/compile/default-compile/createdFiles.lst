@@ -6,6 +6,7 @@ lambethd\kraken\server\job\JobCentralController.class
 lambethd\kraken\server\util\BeanUtil.class
 lambethd\kraken\server\job\JobProcessorFactory.class
 lambethd\kraken\server\kafka\IKafkaConstants.class
+lambethd\kraken\server\service\JobDetailService.class
 lambethd\kraken\server\Configuration.class
 lambethd\kraken\server\MongoConfiguration.class
 lambethd\kraken\server\job\JobProcessorBase.class
@@ -14,4 +15,5 @@ lambethd\kraken\server\Application.class
 lambethd\kraken\server\scheduling\DailyBatchScheduler.class
 lambethd\kraken\server\util\DateFormatter.class
 lambethd\kraken\server\job\HistoricalDataLoader.class
+lambethd\kraken\server\interfaces\IJobDetailService.class
 lambethd\kraken\server\job\ProgressReporter.class

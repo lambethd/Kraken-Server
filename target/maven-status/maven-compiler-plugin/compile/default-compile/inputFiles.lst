@@ -1,4 +1,6 @@
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\MongoConfiguration.java
+C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\interfaces\IJobDetailService.java
+C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\service\JobDetailService.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\Configuration.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\job\IJobProcessor.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\job\JobCentralController.java

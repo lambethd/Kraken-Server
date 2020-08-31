@@ -35,13 +35,18 @@ public class Program {
         setup();
         jobCentralController.init();
         jobCentralController.failedPreviouslyStartedJobs();
+
+
+        IJob job = new Job();
+        job.setStatus(JobStatus.Pending);
+        job.setJobType(JobType.DailyDataLoader);
+        job.setUsername("David");
+        job.setRuneDay(6747);
+        jobRepository.save(job);
+
+
         jobCentralController.begin();
 
-//        IJob job = new Job();
-//        job.setStatus(JobStatus.Pending);
-//        job.setJobType(JobType.HistoricalDataLoader);
-//        job.setUsername("David");
-//        jobRepository.save(job);
 //        job = new Job();
 //        job.setStatus(JobStatus.Pending);
 //        job.setJobType(JobType.DailyDataLoader);
