@@ -87,7 +87,7 @@ public class JobCentralController {
 
     private Runnable jobCreation() {
         return () -> {
-            logger.info("Looking for jobs to create");
+//            logger.info("Looking for jobs to create");
             List<IJob> jobsToProcess = jobRepository.findJobByStatus(JobStatus.Pending);
             jobsToProcess.forEach(job -> {
                 if (canRunJob(job)) {
@@ -134,7 +134,7 @@ public class JobCentralController {
 
     private Runnable jobCompleting() {
         return () -> {
-            logger.info("Finding jobs that have completed");
+//            logger.info("Finding jobs that have completed");
             jobFutures.forEachKey(maximumThreads, key -> {
                 if (jobFutures.get(key).isDone()) {
                     try {

@@ -20,23 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a08aa3b9-b23b-48ec-b36a-f079721bed8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/JobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IJobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/JobService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/IJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/IJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IJobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IJobRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IItemApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IItemApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/ProgramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/ProgramTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ICatalogueApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ICatalogueApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IItemApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IItemApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/mapper/ItemMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/mapper/ItemMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DailyDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DailyDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobCentralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobCentralController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobProcessorBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobProcessorBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/scheduling/DailyBatchScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/scheduling/DailyBatchScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lambethd.kraken.application.service" />
+      <recent name="lambethd.kraken.application.interfaces" />
+      <recent name="runescape" />
+      <recent name="lambethd.kraken.server.service.domain" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="lambethd.kraken.application.service" />
       <recent name="lambethd.kraken.application.mapper" />
@@ -102,9 +108,6 @@
       <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.server" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\Kraken-Data-Services\src\main\resources\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\Kraken-Resources\src\main\java\lambethd\kraken\resource\interfaces" />
     </key>
@@ -115,14 +118,12 @@
       <recent name="lambethd.kraken.application.controller" />
       <recent name="lambethd.kraken.server.job" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="lambethd.kraken.application.service" />
-      <recent name="lambethd.kraken.application.interfaces" />
-      <recent name="runescape" />
-      <recent name="lambethd.kraken.server.service.domain" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\Kraken-Data-Services\src\test\resources" />
+      <recent name="C:\dev\Kraken-Data-Services\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Kraken-Resources">
+  <component name="RunManager" selected="Application.Kraken Server">
     <configuration name="Kraken Data Services" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk-14" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -180,6 +181,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItemServiceTest.getItems_WhenItemsExist_ReturnsAListOfItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kraken-data-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambethd.kraken.application.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambethd.kraken.application.service" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.ItemServiceTest" />
+      <option name="METHOD_NAME" value="getItems_WhenItemsExist_ReturnsAListOfItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KafkaOrchestrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kraken-Server" />
       <extension name="coverage">
@@ -213,38 +230,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TradeDtoMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kraken-data-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lambethd.kraken.application.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lambethd.kraken.application.mapper" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.mapper.TradeDtoMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Kraken Data Services" />
       <item itemvalue="Application.Kraken Server" />
       <item itemvalue="JUnit.Sandbox.clearAllTrades_Always_ClearsTrades" />
       <item itemvalue="JUnit.ItemServiceTest" />
-      <item itemvalue="JUnit.TradeDtoMapperTest" />
       <item itemvalue="JUnit.KafkaOrchestrationTests" />
       <item itemvalue="JUnit.ICatalogueApiTest.TestApiCall" />
       <item itemvalue="JUnit.All in Kraken-Resources" />
+      <item itemvalue="JUnit.ItemServiceTest.getItems_WhenItemsExist_ReturnsAListOfItems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemServiceTest.getItems_WhenItemsExist_ReturnsAListOfItems" />
         <item itemvalue="JUnit.All in Kraken-Resources" />
         <item itemvalue="JUnit.ICatalogueApiTest.TestApiCall" />
         <item itemvalue="JUnit.KafkaOrchestrationTests" />
         <item itemvalue="JUnit.ItemServiceTest" />
-        <item itemvalue="JUnit.TradeDtoMapperTest" />
       </list>
     </recent_temporary>
   </component>
@@ -275,30 +277,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593712047338" />
-    <state x="693" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590953086901">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="693" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590953086901" />
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1597869429735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597869429735" />
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590834565643">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590834565643" />
-    <state x="717" y="389" width="486" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591225755763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="717" y="389" width="486" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591225755763" />
-    <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590608578150">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590608578150" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590835898713">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590835898713" />
     <state x="715" y="223" key="#xdebugger.evaluate" timestamp="1597757139592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -307,46 +289,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="457" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593030762036" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1598909152606">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1600022753502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909152606" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1598909152605">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600022753502" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1600022753502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909152605" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1598909152605">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600022753502" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1600022753502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909152605" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1598909152605">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600022753502" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1600022753502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909152605" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1598909141095">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600022753502" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1598911103764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909141095" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1598909141095">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598911103764" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1598911103764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909141095" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1598909141095">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598911103764" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1598911103764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909141095" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1598909141095">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598911103764" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1598911103764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598909141095" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1597772062333">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598911103764" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1600023205651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597772062333" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1598906773014">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600023205651" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1599302555274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598906773014" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599302555274" />
     <state x="667" y="83" width="607" height="873" key="find.popup" timestamp="1592327819690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -375,7 +357,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java</url>
-          <line>47</line>
+          <line>53</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

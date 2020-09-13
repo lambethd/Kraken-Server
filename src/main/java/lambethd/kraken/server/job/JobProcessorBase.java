@@ -1,11 +1,14 @@
 package lambethd.kraken.server.job;
 
 import domain.orchestration.IJob;
+import lambethd.kraken.data.mongo.repository.IJobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class JobProcessorBase implements IJobProcessor {
     @Autowired
     private ProgressReporter progressReporter;
+    @Autowired
+    private IJobRepository jobRepository;
 
     protected IJob job;
 
@@ -26,6 +29,8 @@ public abstract class JobProcessorBase implements IJobProcessor {
             return result;
         } catch (Exception e) {
             e.printStackTrace();
+            job.setError(e.getMessage());
+            jobRepository.save(job);
             return false;
         }
     }
