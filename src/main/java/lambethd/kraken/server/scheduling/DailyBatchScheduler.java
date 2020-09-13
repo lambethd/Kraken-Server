@@ -20,14 +20,19 @@ public class DailyBatchScheduler {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Scheduled(cron="0 15 0 * * ?")
-    public void scheduleDailyBatchJobs(){
-        logger.info("Starting daily batch jobs");
+    public void scheduleDailyDataLoader(){
+        logger.info("Starting daily load batch jobs");
         IJob job = new Job();
         job.setStatus(JobStatus.Pending);
         job.setJobType(JobType.DailyDataLoader);
         job.setUsername("System");
         jobRepository.save(job);
-        job = new Job();
+    }
+
+    @Scheduled(cron="0 15 4 * * ?")
+    public void scheduleHistoricalDataLoader(){
+        logger.info("Starting historical load batch jobs");
+        IJob job = new Job();
         job.setStatus(JobStatus.Pending);
         job.setJobType(JobType.HistoricalDataLoader);
         job.setUsername("System");
