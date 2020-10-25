@@ -1,4 +1,3 @@
-C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\MongoConfiguration.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\interfaces\IJobDetailService.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\service\JobDetailService.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\Configuration.java
@@ -13,6 +12,7 @@ C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\scheduling\DailyBatchS
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\Application.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\configuration\RepositorySetup.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\job\HistoricalDataLoader.java
+C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\DbConfiguration.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\job\ProgressReporter.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\service\Program.java
 C:\dev\Kraken-Server\src\main\java\lambethd\kraken\server\util\DateFormatter.java
