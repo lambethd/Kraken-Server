@@ -1,9 +1,9 @@
 package lambethd.kraken.server.job;
 
-import domain.orchestration.Job;
+import domain.orchestration.IJob;
 import domain.orchestration.JobDependency;
 import domain.orchestration.JobStatus;
-import lambethd.kraken.data.repository.JobRepository;
+import lambethd.kraken.data.mongo.repository.IJobRepository;
 import lambethd.kraken.resource.interfaces.IInfoApi;
 import lambethd.kraken.server.interfaces.IJobDetailService;
 import org.slf4j.Logger;
@@ -30,7 +30,7 @@ public class JobCentralController {
     @Value("${job.controller.timeout_minutes}")
     private int controllerTimeoutMinutes;
     @Autowired
-    private JobRepository jobRepository;
+    private IJobRepository jobRepository;
     @Autowired
     private JobProcessorFactory jobProcessorFactory;
     @Autowired
@@ -88,7 +88,7 @@ public class JobCentralController {
     private Runnable jobCreation() {
         return () -> {
 //            logger.info("Looking for jobs to create");
-            List<Job> jobsToProcess = jobRepository.findJobByStatus(JobStatus.Pending);
+            List<IJob> jobsToProcess = jobRepository.findJobByStatus(JobStatus.Pending);
             jobsToProcess.forEach(job -> {
                 if (canRunJob(job)) {
                     if (!jobFutures.containsKey(job.getId())) {
@@ -111,7 +111,7 @@ public class JobCentralController {
         };
     }
 
-    private boolean canRunJob(Job job) {
+    private boolean canRunJob(IJob job) {
         List<JobDependency> dependencies = jobDetailService.findJobDependencies(job);
         List<JobDependency> missingDependencies = dependencies.stream()
                 .filter(jobDependency -> !jobRepository.existsByJobTypeAndStatusAndRuneDay(jobDependency.getJobType(), JobStatus.Completed, job.getRuneDay()))
@@ -124,7 +124,7 @@ public class JobCentralController {
         }
     }
 
-    private void setJobStatus(Job job, JobStatus status) {
+    private void setJobStatus(IJob job, JobStatus status) {
         job.setStatus(status);
         logger.info("#############################################################################################################");
         logger.info("Job (" + job.getId() + ") of JobType: " + job.getJobType() + " set to status: " + job.getStatus());
@@ -139,7 +139,7 @@ public class JobCentralController {
                 if (jobFutures.get(key).isDone()) {
                     try {
                         Boolean result = jobFutures.get(key).get();
-                        Job job = jobRepository.findOne(key);
+                        IJob job = jobRepository.findById(key);
                         jobFutures.remove(key);
                         if (result) {
                             setJobStatus(job, JobStatus.Completed);
@@ -155,12 +155,12 @@ public class JobCentralController {
     }
 
     public void failedPreviouslyStartedJobs() {
-        List<Job> startedJobs = jobRepository.findJobByStatus(JobStatus.Started);
+        List<IJob> startedJobs = jobRepository.findJobByStatus(JobStatus.Started);
         startedJobs.forEach(j -> {
             logger.info("Setting Started job(" + j.getId() + ") to failed.");
             setJobStatus(j, JobStatus.Failed);
         });
-        List<Job> blockedJobs = jobRepository.findJobByStatus(JobStatus.Blocked);
+        List<IJob> blockedJobs = jobRepository.findJobByStatus(JobStatus.Blocked);
         blockedJobs.forEach(j -> {
             logger.info("Setting Blocked job(" + j.getId() + ") to failed.");
             setJobStatus(j, JobStatus.Failed);

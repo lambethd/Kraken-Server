@@ -8,9 +8,9 @@ lambethd\kraken\server\job\JobProcessorFactory.class
 lambethd\kraken\server\kafka\IKafkaConstants.class
 lambethd\kraken\server\service\JobDetailService.class
 lambethd\kraken\server\Configuration.class
+lambethd\kraken\server\MongoConfiguration.class
 lambethd\kraken\server\job\JobProcessorBase.class
 lambethd\kraken\server\service\Program.class
-lambethd\kraken\server\DbConfiguration.class
 lambethd\kraken\server\Application.class
 lambethd\kraken\server\scheduling\DailyBatchScheduler.class
 lambethd\kraken\server\util\DateFormatter.class
