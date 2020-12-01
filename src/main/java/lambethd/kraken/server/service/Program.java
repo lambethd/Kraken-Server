@@ -1,9 +1,11 @@
 package lambethd.kraken.server.service;
 
+import domain.orchestration.IJob;
 import domain.orchestration.Job;
-import dto.Configuration;
-import lambethd.kraken.data.repository.ConfigRepository;
-import lambethd.kraken.data.repository.JobRepository;
+import domain.orchestration.JobStatus;
+import domain.orchestration.JobType;
+import lambethd.kraken.data.mongo.repository.IJobDetailRepository;
+import lambethd.kraken.data.mongo.repository.IJobRepository;
 import lambethd.kraken.server.configuration.RepositorySetup;
 import lambethd.kraken.server.interfaces.IJobDetailService;
 import lambethd.kraken.server.job.JobCentralController;
@@ -14,17 +16,15 @@ import javax.annotation.PostConstruct;
 
 @Service
 public class Program {
+
+    @Autowired
+    private RepositorySetup repositorySetup;
+    @Autowired
+    private IJobRepository jobRepository;
     @Autowired
     private JobCentralController jobCentralController;
     @Autowired
     private IJobDetailService jobDetailService;
-    @Autowired
-    private RepositorySetup repositorySetup;
-    @Autowired
-    private JobRepository jobRepository;
-    @Autowired
-    ConfigRepository configRepository;
-
 
     private void setup() {
         repositorySetup.setup();
@@ -33,14 +33,6 @@ public class Program {
     @PostConstruct
     public void run() {
         setup();
-        configRepository.save(new Configuration());
-        Iterable<Configuration> dtos = configRepository.findAll();
-
-
-        jobRepository.save(new Job());
-        Iterable<Job> jobs = jobRepository.findAll();
-
-
         jobCentralController.init();
         jobCentralController.failedPreviouslyStartedJobs();
         jobCentralController.begin();
