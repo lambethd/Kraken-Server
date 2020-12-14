@@ -69,8 +69,7 @@ public class HistoricalDataLoader extends JobProcessorBase {
         items.forEach(item -> {
             try {
                 Date start1 = Date.from(Instant.now());
-                String itemName = item.wikiName == null ? item.name : item.wikiName;
-                List<HistoricalData> historicalData = historicalDataApi.getHistoricalData(itemName);
+                List<HistoricalData> historicalData = historicalDataApi.getHistoricalData(item.id);
                 Graph graph = new Graph();
                 graph.id = item.id;
                 graph.lastUpdatedRuneDay = finalCurrentRuneDay.lastConfigUpdateRuneday;
