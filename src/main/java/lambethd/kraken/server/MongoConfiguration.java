@@ -1,6 +1,9 @@
 package lambethd.kraken.server;
 
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientSettings;
+import com.mongodb.MongoClientURI;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
@@ -9,6 +12,9 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableMongoRepositories(basePackages = "lambethd.kraken.data.mongo.repository")
 public class MongoConfiguration extends AbstractMongoConfiguration {
 
+    @Value("${spring.data.mongodb.uri}")
+    public String uri;
+
     @Override
     protected String getDatabaseName() {
         return "kraken";
@@ -16,7 +22,7 @@ public class MongoConfiguration extends AbstractMongoConfiguration {
 
     @Override
     public MongoClient mongoClient() {
-        return new MongoClient("127.0.0.1", 27017);
+        return new MongoClient(new MongoClientURI(uri));
     }
 
     @Override
