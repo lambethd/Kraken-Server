@@ -20,24 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a08aa3b9-b23b-48ec-b36a-f079721bed8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/IJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/IJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IDashboardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/DashboardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/DashboardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/ItemMovementDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IDashboardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/domain/ItemDashboardCalculationIntermediate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DashboardDataCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/GraphUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/IGraphUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/JobType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/JobType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IJobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IJobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IConfigRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IConfigRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IGraphRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IGraphRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/MongoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobCentralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobCentralController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobProcessorBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobProcessorBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/scheduling/DailyBatchScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/scheduling/DailyBatchScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,8 +62,8 @@
         <option value="HTML File" />
         <option value="JUnit4 Test Class" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -79,19 +92,13 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/lambethd/kraken" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kraken-Resources/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="lambethd.kraken.application.service" />
-      <recent name="lambethd.kraken.application.interfaces" />
-      <recent name="runescape" />
-      <recent name="lambethd.kraken.server.service.domain" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="lambethd.kraken.application.service" />
       <recent name="lambethd.kraken.application.mapper" />
@@ -108,22 +115,40 @@
       <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.server" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\dev\Kraken-Resources\src\main\java\lambethd\kraken\resource\interfaces" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="lambethd.kraken.data.mongo.repository" />
-      <recent name="lambethd.kraken.application.interfaces" />
-      <recent name="lambethd.kraken.application.service" />
-      <recent name="lambethd.kraken.application.controller" />
-      <recent name="lambethd.kraken.server.job" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\Kraken-Data-Services\src\test\resources" />
       <recent name="C:\dev\Kraken-Data-Services\src\main\resources\templates" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\Kraken-Resources\src\main\java\lambethd\kraken\resource\interfaces" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lambethd.kraken.server.job" />
+      <recent name="lambethd.kraken.application.interfaces" />
+      <recent name="lambethd.kraken.application.service" />
+      <recent name="lambethd.kraken.application.controller" />
+      <recent name="lambethd.kraken.data.mongo.repository" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lambethd.kraken.application.service" />
+      <recent name="lambethd.kraken.application.interfaces" />
+      <recent name="runescape" />
+      <recent name="lambethd.kraken.server.service.domain" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Kraken Server">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Kraken Data Services">
     <configuration name="Kraken Data Services" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk-14" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -214,7 +239,6 @@
     </configuration>
     <configuration name="Sandbox.clearAllTrades_Always_ClearsTrades" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="kraken-data-services" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lambethd.kraken.application.service.*" />
@@ -265,12 +289,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593712047338">
@@ -354,11 +379,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/enrich/StockTradeEnricher.java</url>
           <line>25</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/test/java/lambethd/kraken/application/service/ItemServiceTest.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/ItemController.java</url>
@@ -457,11 +477,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo typeName="org.springframework.data.domain.ExampleMatcher$PropertySpecifier" fieldName="stringMatcher" />
-      </pinned-members>
-    </pin-to-top-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="data.substring(data.indexOf(&quot;return&quot;))" language="JAVA" />
