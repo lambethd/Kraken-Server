@@ -1,10 +1,8 @@
 package lambethd.kraken.server.service;
 
-import domain.orchestration.IJob;
 import domain.orchestration.Job;
 import domain.orchestration.JobStatus;
 import domain.orchestration.JobType;
-import lambethd.kraken.data.mongo.repository.IJobDetailRepository;
 import lambethd.kraken.data.mongo.repository.IJobRepository;
 import lambethd.kraken.server.configuration.RepositorySetup;
 import lambethd.kraken.server.interfaces.IJobDetailService;
@@ -38,7 +36,7 @@ public class Program {
 
         Job job = new Job();
         job.setStatus(JobStatus.Pending);
-        job.setJobType(JobType.HistoricalDataLoader);
+        job.setJobType(JobType.BuyingLimitLoader);
         job.setUsername("David");
         jobRepository.save(job);
 

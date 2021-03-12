@@ -4,23 +4,22 @@ import domain.DashboardDto;
 import domain.Index;
 import domain.orchestration.JobType;
 import dto.ItemMovementDto;
+import lambethd.kraken.data.mongo.repository.DashboardDtoRepository;
 import lambethd.kraken.data.mongo.repository.IGraphRepository;
-import lambethd.kraken.data.mongo.repository.IItemRepository;
-import lambethd.kraken.server.util.IGraphUtility;
+import lambethd.kraken.server.interfaces.IOutlierService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import portfolio.RangeType;
 import runescape.Graph;
-import runescape.Item;
-import runescape.Pair;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service("DashboardDataCreator")
 @Scope("prototype")
@@ -30,10 +29,9 @@ public class DashboardDataCreator extends JobProcessorBase {
     @Autowired
     private IGraphRepository graphRepository;
     @Autowired
-    private IItemRepository itemRepository;
-
+    private IOutlierService outlierService;
     @Autowired
-    private IGraphUtility graphUtility;
+    private DashboardDtoRepository dashboardRepository;
 
     @Value("${job.batch_size}")
     private int batchSize;
@@ -54,36 +52,35 @@ public class DashboardDataCreator extends JobProcessorBase {
     @Override
     public Boolean callInternal() {
         DashboardDto dashboard = new DashboardDto();
+        List<Graph> graphs = graphRepository.findAll();
+        List<ItemMovementDto> itemMovementDtos = outlierService.calculateItemMovements(graphs);
+        int n = 10;
+
         //topIncreases by value
-        List<ItemMovementDto> topIncreasesByDailyValue = new ArrayList<>();
-        List<ItemMovementDto> topIncreasesByMonthlyValue = new ArrayList<>();
+        List<ItemMovementDto> topIncreasesByDailyValue = outlierService.getTopNByValue(itemMovementDtos, n, RangeType.DAY);
+        progressReporter.reportProgress(this.getJob(), 1, 10);
+        List<ItemMovementDto> topIncreasesByMonthlyValue = outlierService.getTopNByValue(itemMovementDtos, n, RangeType.MONTH);
+        progressReporter.reportProgress(this.getJob(), 2, 10);
         //topIncreases by %
-        List<ItemMovementDto> topIncreasesByDailyPercentage = new ArrayList<>();
-        List<ItemMovementDto> topIncreasesByMonthlyPercentage = new ArrayList<>();
+        List<ItemMovementDto> topIncreasesByDailyPercentage = outlierService.getTopNByPercentage(itemMovementDtos, n, RangeType.DAY);
+        progressReporter.reportProgress(this.getJob(), 3, 10);
+        List<ItemMovementDto> topIncreasesByMonthlyPercentage = outlierService.getTopNByPercentage(itemMovementDtos, n, RangeType.MONTH);
+        progressReporter.reportProgress(this.getJob(), 4, 10);
         //topDecreases by value
-        List<ItemMovementDto> topDecreasesByDailyValue = new ArrayList<>();
-        List<ItemMovementDto> topDecreasesByMonthlyValue = new ArrayList<>();
+        List<ItemMovementDto> topDecreasesByDailyValue = outlierService.getBottomNByValue(itemMovementDtos, n, RangeType.DAY);
+        progressReporter.reportProgress(this.getJob(), 5, 10);
+        List<ItemMovementDto> topDecreasesByMonthlyValue = outlierService.getBottomNByValue(itemMovementDtos, n, RangeType.MONTH);
+        progressReporter.reportProgress(this.getJob(), 6, 10);
         //topDecreases by %
-        List<ItemMovementDto> topDecreasesByDailyPercentage = new ArrayList<>();
-        List<ItemMovementDto> topDecreasesByMonthlyPercentage = new ArrayList<>();
+        List<ItemMovementDto> topDecreasesByDailyPercentage = outlierService.getBottomNByPercentage(itemMovementDtos, n, RangeType.DAY);
+        progressReporter.reportProgress(this.getJob(), 7, 10);
+        List<ItemMovementDto> topDecreasesByMonthlyPercentage = outlierService.getBottomNByPercentage(itemMovementDtos, n, RangeType.MONTH);
+        progressReporter.reportProgress(this.getJob(), 8, 10);
         //Indexes
         List<Index> indexes = new ArrayList<>();
+        progressReporter.reportProgress(this.getJob(), 9, 10);
         //ItemsToWatch
         List<Integer> itemsToWatch = new ArrayList<>();
-
-
-        List<Item> items = itemRepository.findAll();
-        List<ItemMovementDto> itemMovements = items.stream().map(i->{
-            ItemMovementDto dailyMovement = new ItemMovementDto();
-            Graph graph = graphRepository.getGraphById(i.id);
-            dailyMovement.setValueChange();
-            graphUtility.getValueByOffset(0);
-
-
-            dailyMovement.setItemId(i.id);
-
-            return dailyMovement;
-        }).collect(Collectors.toList());
 
 
         dashboard.setTopIncreasesByDailyValue(topIncreasesByDailyValue);
@@ -98,9 +95,14 @@ public class DashboardDataCreator extends JobProcessorBase {
 
         dashboard.setTopDecreasesByMonthlyValue(topDecreasesByMonthlyValue);
         dashboard.setTopDecreasesByMonthlyPercentage(topDecreasesByMonthlyPercentage);
+        //TODO: work out indexes
         dashboard.setIndexList(indexes);
-
+        //TODO: work out items to watch (should this be called 5%ers?)
         dashboard.setItemsToWatch(itemsToWatch);
+
+        dashboard.setCreated(LocalDateTime.now(ZoneOffset.UTC));
+
+        dashboardRepository.save(dashboard);
         return true;
     }
 }
