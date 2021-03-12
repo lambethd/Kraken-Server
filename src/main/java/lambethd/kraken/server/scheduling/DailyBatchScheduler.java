@@ -34,7 +34,7 @@ public class DailyBatchScheduler {
         logger.info("Starting historical load batch jobs");
         IJob job = new Job();
         job.setStatus(JobStatus.Pending);
-        job.setJobType(JobType.HistoricalDataLoader);
+        job.setJobType(JobType.DailyGraphLoader);
         job.setUsername("System");
         jobRepository.save(job);
     }

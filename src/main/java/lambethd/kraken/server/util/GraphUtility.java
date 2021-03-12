@@ -12,8 +12,7 @@ import java.util.Optional;
 public class GraphUtility implements IGraphUtility {
     @Override
     public Float getValueByDate(List<Pair<LocalDateTime, Float>> graph, LocalDateTime date) {
-        graph.sort(Comparator.comparing(Pair::getKey));
-        Optional<Pair<LocalDateTime, Float>> result = graph.stream().filter(i -> i.getKey() == date).findFirst();
+        Optional<Pair<LocalDateTime, Float>> result = graph.stream().filter(i -> i.getKey().equals(date)).findFirst();
         return result.map(Pair::getValue).orElse(null);
     }
 
