@@ -140,6 +140,7 @@ public class JobCentralController {
                     try {
                         Boolean result = jobFutures.get(key).get();
                         IJob job = jobRepository.findById(key);
+                        job.setFinishTime(LocalDateTime.now());
                         jobFutures.remove(key);
                         if (result) {
                             setJobStatus(job, JobStatus.Completed);
