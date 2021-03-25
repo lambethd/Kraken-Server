@@ -71,7 +71,7 @@ public class JobCentralController {
         try {
             TimeUnit.SECONDS.sleep(20);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            logger.error("Job cancellation timeout has failed. This might not matter", e);
         }
         return jobFutures.get(jobId).isCancelled();
     }
