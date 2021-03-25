@@ -28,7 +28,7 @@
       <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/ILatestDataMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/BuyingLimitMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ILatestDataApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/WeirdGloopApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/WeirdGloopApi.java" afterDir="false" />
@@ -38,7 +38,7 @@
       <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/interfaces/IJobDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/interfaces/IJobDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Kraken-Data-Services" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
