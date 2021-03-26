@@ -11,5 +11,36 @@
         "authScope": "GOD"
       }
     ]
+  },
+  {
+    "jobType": "BuyingLimitLoader",
+    "jobDependencies": [
+      {
+        "jobType": "DailyDataLoader",
+        "authScope": "GOD"
+      }
+    ]
+  },
+  {
+    "jobType": "DailyGraphLoader",
+    "jobDependencies" : [
+      {
+        "jobType": "DailyDataLoader",
+        "authScope": "GOD"
+      }
+    ]
+  },
+  {
+    "jobType": "DashboardDataCreator",
+    "jobDependencies": [
+      {
+        "jobType": "DailyDataLoader",
+        "authScope": "GOD"
+      },
+      {
+        "jobType": "DailyGraphLoader",
+        "authScope": "GOD"
+      }
+    ]
   }
 ]

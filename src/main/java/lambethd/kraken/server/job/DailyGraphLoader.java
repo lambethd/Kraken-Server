@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service("DailyGraphLoader")
@@ -53,24 +54,31 @@ public class DailyGraphLoader extends JobProcessorBase {
         AtomicInteger count = new AtomicInteger();
         int totalItems = items.size();
 
-        List<Graph> graphs = new LinkedList<>();
-        items.forEach(item -> {
+        ConcurrentLinkedQueue<Graph> graphs = new ConcurrentLinkedQueue<>();
+        items.parallelStream().forEach(item -> {
             try {
                 HistoricalData latestData = latestDataApi.getLatestData(item.id);
-                Graph graph = graphRepository.getGraphById(item.id);
-                if(!graph.daily.stream().filter(i->i.getKey().isEqual(latestData.getDate())).findAny().isPresent()){
-                    graph.daily.add(new Pair<>(latestData.getDate(),latestData.getPrice()));
-                    graphs.add(graph);
+                if(latestData != null) {
+                    Graph graph = graphRepository.getGraphById(item.id);
+
+                    if (graph.daily.stream().noneMatch(i -> i.getKey().isEqual(latestData.getDate()))) {
+                        graph.daily.add(new Pair<>(latestData.getDate(), latestData.getPrice()));
+                        graphs.add(graph);
+                    }
                 }
 
                 count.getAndIncrement();
                 if(graphs.size() % batchSize == 0){
-                    graphRepository.saveAll(graphs);
-                    graphs.clear();
+                    synchronized (this) {
+                        graphRepository.saveAll(graphs);
+                        graphs.clear();
+                    }
+                }
+                if(count.get() % batchSize == 0){
                     progressReporter.reportProgress(getJob(), count.get(), totalItems);
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.warn("Failed to add current graph data for itemId: " + item.id, e);
             }
         });
         graphRepository.saveAll(graphs);

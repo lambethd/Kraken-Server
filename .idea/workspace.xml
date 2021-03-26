@@ -20,35 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a08aa3b9-b23b-48ec-b36a-f079721bed8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/interfaces/IDashboardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/DashboardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/DashboardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/Index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/dto/ItemMovementDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Kraken-Repository/src/main/java/lambethd/kraken/data/mongo/repository/IDashboardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/domain/ItemDashboardCalculationIntermediate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DashboardDataCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/GraphUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/IGraphUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsWikiApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/dto/BuyingLimitDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/dto/LatestDataDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IBuyingLimitApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/ILatestDataApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/ILatestDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/BuyingLimitMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ILatestDataApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Data-Services/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/JobType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/src/main/java/domain/orchestration/JobType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IConfigRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IConfigRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IGraphRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IGraphRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/classes/lambethd/kraken/data/mongo/repository/IItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/RsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/WeirdGloopApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/WeirdGloopApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IHistoricalDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/interfaces/IHistoricalDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/WeirdGloopHistoricalDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/WeirdGloopDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IInfoApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/IInfoApiTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Kraken-Resources/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,15 +50,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Kraken-Data-Services" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -91,7 +81,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/lambethd/kraken" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kraken-Resources/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -99,41 +89,41 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lambethd.kraken.application.service" />
+      <recent name="lambethd.kraken.application.interfaces" />
+      <recent name="runescape" />
+      <recent name="lambethd.kraken.server.service.domain" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lambethd.kraken.server.service" />
+      <recent name="lambethd.kraken.resource" />
+      <recent name="lambethd.kraken.server.job" />
       <recent name="lambethd.kraken.application.service" />
       <recent name="lambethd.kraken.application.mapper" />
-      <recent name="lambethd.kraken.data.mongo.repository" />
-      <recent name="lambethd.kraken.resource.interfaces" />
-      <recent name="lambethd.kraken.resource.mapper" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.resource" />
       <recent name="lambethd.kraken.application" />
-      <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.server" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\Kraken-Data-Services\src\test\resources" />
-      <recent name="C:\dev\Kraken-Data-Services\src\main\resources\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\Kraken-Resources\src\main\java\lambethd\kraken\resource\interfaces" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lambethd.kraken.server.job" />
-      <recent name="lambethd.kraken.application.interfaces" />
-      <recent name="lambethd.kraken.application.service" />
-      <recent name="lambethd.kraken.application.controller" />
+      <recent name="lambethd.kraken.application.security" />
       <recent name="lambethd.kraken.data.mongo.repository" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="lambethd.kraken.application.service" />
+      <recent name="lambethd.kraken.resource.interfaces" />
       <recent name="lambethd.kraken.application.interfaces" />
-      <recent name="runescape" />
-      <recent name="lambethd.kraken.server.service.domain" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\Kraken-Data-Services\src\test\resources" />
+      <recent name="C:\dev\Kraken-Data-Services\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,89 +140,70 @@
   </component>
   <component name="RunManager" selected="Application.Kraken Data Services">
     <configuration name="Kraken Data Services" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk-14" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.Application" />
       <module name="kraken-data-services" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.config.location=file:C:\dev\config\dataServices.properties" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Kraken Server" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.Application" />
       <module name="Kraken-Server" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.config.location=file:C:\dev\config\server.properties" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Kraken-Resources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Kraken-Resources" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ICatalogueApiTest.TestApiCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Kraken-Resources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lambethd.kraken.resource.interfaces.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="IInfoApiTests.TestApiCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="resources" />
       <option name="PACKAGE_NAME" value="lambethd.kraken.resource.interfaces" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.resource.interfaces.ICatalogueApiTest" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.resource.interfaces.IInfoApiTests" />
       <option name="METHOD_NAME" value="TestApiCall" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kraken-data-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lambethd.kraken.application.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lambethd.kraken.application.service" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.ItemServiceTest" />
+    <configuration name="OutlierServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kraken-Server" />
+      <option name="PACKAGE_NAME" value="lambethd.kraken.server.service" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.service.OutlierServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.getItems_WhenItemsExist_ReturnsAListOfItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kraken-data-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lambethd.kraken.application.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lambethd.kraken.application.service" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.application.service.ItemServiceTest" />
-      <option name="METHOD_NAME" value="getItems_WhenItemsExist_ReturnsAListOfItems" />
+    <configuration name="OutlierServiceTest.getBottomNByPercentage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kraken-Server" />
+      <option name="PACKAGE_NAME" value="lambethd.kraken.server.service" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.service.OutlierServiceTest" />
+      <option name="METHOD_NAME" value="getBottomNByPercentage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaOrchestrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OutlierServiceTest.getBottomNByValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kraken-Server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lambethd.kraken.server.integration.orchestration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lambethd.kraken.server.integration.orchestration" />
-      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.integration.orchestration.KafkaOrchestrationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="lambethd.kraken.server.service" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.service.OutlierServiceTest" />
+      <option name="METHOD_NAME" value="getBottomNByValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OutlierServiceTest.getTopNByPercentage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kraken-Server" />
+      <option name="PACKAGE_NAME" value="lambethd.kraken.server.service" />
+      <option name="MAIN_CLASS_NAME" value="lambethd.kraken.server.service.OutlierServiceTest" />
+      <option name="METHOD_NAME" value="getTopNByPercentage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,19 +229,19 @@
       <item itemvalue="Application.Kraken Data Services" />
       <item itemvalue="Application.Kraken Server" />
       <item itemvalue="JUnit.Sandbox.clearAllTrades_Always_ClearsTrades" />
-      <item itemvalue="JUnit.ItemServiceTest" />
-      <item itemvalue="JUnit.KafkaOrchestrationTests" />
-      <item itemvalue="JUnit.ICatalogueApiTest.TestApiCall" />
-      <item itemvalue="JUnit.All in Kraken-Resources" />
-      <item itemvalue="JUnit.ItemServiceTest.getItems_WhenItemsExist_ReturnsAListOfItems" />
+      <item itemvalue="JUnit.OutlierServiceTest.getBottomNByValue" />
+      <item itemvalue="JUnit.OutlierServiceTest.getTopNByPercentage" />
+      <item itemvalue="JUnit.OutlierServiceTest.getBottomNByPercentage" />
+      <item itemvalue="JUnit.OutlierServiceTest" />
+      <item itemvalue="JUnit.IInfoApiTests.TestApiCall" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ItemServiceTest.getItems_WhenItemsExist_ReturnsAListOfItems" />
-        <item itemvalue="JUnit.All in Kraken-Resources" />
-        <item itemvalue="JUnit.ICatalogueApiTest.TestApiCall" />
-        <item itemvalue="JUnit.KafkaOrchestrationTests" />
-        <item itemvalue="JUnit.ItemServiceTest" />
+        <item itemvalue="JUnit.IInfoApiTests.TestApiCall" />
+        <item itemvalue="JUnit.OutlierServiceTest" />
+        <item itemvalue="JUnit.OutlierServiceTest.getBottomNByPercentage" />
+        <item itemvalue="JUnit.OutlierServiceTest.getTopNByPercentage" />
+        <item itemvalue="JUnit.OutlierServiceTest.getBottomNByValue" />
       </list>
     </recent_temporary>
   </component>
@@ -386,26 +357,6 @@
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/UserController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/controller/UserController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/RestExceptionHandler.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/exception/RestExceptionHandler.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/AuthService.java</url>
           <line>115</line>
           <option name="timeStamp" value="74" />
@@ -427,7 +378,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/PositionService.java</url>
-          <line>19</line>
+          <line>21</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -452,40 +403,96 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/JobService.java</url>
-          <line>21</line>
+          <line>25</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/JobService.java</url>
-          <line>26</line>
+          <line>30</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/JobCentralController.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="98" />
+          <url>file://$PROJECT_DIR$/../Kraken-Resources/src/test/java/lambethd/kraken/resource/interfaces/ILatestDataApiTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DailyDataLoader.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="99" />
+          <url>file://$PROJECT_DIR$/src/test/java/lambethd/kraken/server/service/OutlierServiceTest.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DailyDataLoader.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="100" />
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/util/GraphUtility.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="graph.id==39935" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/OutlierService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/service/OutlierService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DashboardDataCreator.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="i.getItemName().equalsIgnoreCase(&quot;Amulet of the forsaken&quot;)" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/BuyingLimitLoader.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/BuyingLimitLoader.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/PositionService.java</url>
+          <line>71</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Data-Services/src/main/java/lambethd/kraken/application/service/PositionService.java</url>
+          <line>59</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambethd/kraken/server/job/DailyGraphLoader.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/WeirdGloopDataMapper.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Kraken-Resources/src/main/java/lambethd/kraken/resource/mapper/WeirdGloopDataMapper.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="data.substring(data.indexOf(&quot;return&quot;))" language="JAVA" />
-        <watch expression="doc.select(&quot;.mw-highlight&quot;).first().child(0).select(&quot;.s1&quot;).first().childNode(0).toString().replace(&quot;'&quot;,&quot;&quot;)" language="JAVA" />
+        <watch expression="dto.get(dto.fieldNames().next()).get(&quot;price&quot;)" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="totalCount == 0? 0 : count.get()/totalCount*100" language="JAVA" />
-        <watch expression="jobDetailService.findJobDependencies(job)" language="JAVA" />
-        <watch expression="jobDetailService.findJobsDependingOn(job);" language="JAVA" />
+        <watch expression="buyingLimits.stream().filter(b-&gt;b.itemName.contains(&quot;for&quot;)).collect(Collectors.toList())" language="JAVA" custom="java.util.stream.Collectors" />
+        <watch expression="dto.has(&quot;success&quot;)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
