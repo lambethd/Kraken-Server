@@ -60,10 +60,11 @@ public class DailyGraphLoader extends JobProcessorBase {
                 HistoricalData latestData = latestDataApi.getLatestData(item.id);
                 if(latestData != null) {
                     Graph graph = graphRepository.getGraphById(item.id);
-
-                    if (graph.daily.stream().noneMatch(i -> i.getKey().isEqual(latestData.getDate()))) {
-                        graph.daily.add(new Pair<>(latestData.getDate(), latestData.getPrice()));
-                        graphs.add(graph);
+                    if(graph != null && graph.daily != null) {
+                        if (graph.daily.stream().noneMatch(i -> i.getKey().isEqual(latestData.getDate()))) {
+                            graph.daily.add(new Pair<>(latestData.getDate(), latestData.getPrice()));
+                            graphs.add(graph);
+                        }
                     }
                 }
 

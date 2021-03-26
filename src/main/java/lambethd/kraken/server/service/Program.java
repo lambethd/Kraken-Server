@@ -41,7 +41,7 @@ public class Program {
         Job job = new Job();
         job.setStatus(JobStatus.Pending);
         job.setJobType(JobType.DailyGraphLoader);
-        job.setUsername("David");
+        job.setUsername("System");
         job.setRuneDay(infoApi.getInfo().lastConfigUpdateRuneday);
         jobRepository.save(job);
 
